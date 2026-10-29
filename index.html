@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mi espacio creativo: portafolio de desarrollo web, diseño y proyectos creativos." />
+  <title>Mi espacio creativo — Portafolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Mi espacio creativo, inicio">
+        <span class="brand-mark">m.</span>
+        <span>mi espacio <strong>creativo</strong></span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a class="nav-cta" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section container" id="inicio">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> DISEÑO · DESARROLLO · IDEAS</p>
+        <h1>Ideas con intención.<br /><em>Creatividad</em> que conecta.</h1>
+        <p class="hero-description">
+          Un espacio donde las ideas toman forma a través del diseño, el desarrollo web
+          y los pequeños detalles que hacen única cada experiencia.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#proyectos">Explorar proyectos <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="#sobre-mi">Conóceme <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-note">
+          <span class="note-line"></span>
+          <span>Diseñando y aprendiendo, un proyecto a la vez.</span>
+        </div>
+      </div>
+
+      <div class="hero-art reveal" aria-label="Composición decorativa de diseño">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="art-card art-card-back">
+          <span class="tiny-label">COLECCIÓN Nº 01</span>
+          <div class="back-shapes"><i></i><i></i><i></i></div>
+          <span class="back-caption">forma / función / emoción</span>
+        </div>
+        <div class="art-card art-card-front">
+          <div class="art-card-top"><span>ESTUDIO CREATIVO</span><span>✳</span></div>
+          <div class="abstract-flower" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <b></b>
+          </div>
+          <div class="art-card-bottom">
+            <strong>Haz espacio<br />para las ideas.</strong>
+            <span>MC — 2026</span>
+          </div>
+        </div>
+        <div class="floating-tag tag-top">✦ curiosidad constante</div>
+        <div class="floating-tag tag-bottom"><span class="tag-dot"></span> Hecho con intención</div>
+        <div class="art-spark spark-one">✳</div>
+        <div class="art-spark spark-two">✧</div>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <div class="container intro-inner">
+        <p>UN POCO DE TODO, CON MUCHA INTENCIÓN.</p>
+        <div class="intro-tags"><span>Diseño visual</span><i>✳</i><span>Desarrollo web</span><i>✳</i><span>Ideas en construcción</span></div>
+      </div>
+    </section>
+
+    <section class="section container projects-section" id="proyectos">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">01 / TRABAJO SELECCIONADO</p>
+          <h2>Ideas que toman <em>forma.</em></h2>
+        </div>
+        <p class="section-aside">Una selección de proyectos, experimentos y conceptos creativos.</p>
+      </div>
+
+      <div class="filter-row reveal" role="group" aria-label="Filtrar proyectos">
+        <button class="filter-button active" data-filter="todos" aria-pressed="true">Todos <span>04</span></button>
+        <button class="filter-button" data-filter="web" aria-pressed="false">Desarrollo web</button>
+        <button class="filter-button" data-filter="visual" aria-pressed="false">Diseño visual</button>
+        <button class="filter-button" data-filter="concepto" aria-pressed="false">Conceptos</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal" data-category="web">
+          <a class="project-visual visual-lilac" href="#contacto" aria-label="Consultar sobre proyecto Bruma">
+            <div class="browser-frame">
+              <div class="browser-bar"><span></span><span></span><span></span><small>bruma.studio</small></div>
+              <div class="bruma-content"><small>OBJETOS PARA PAUSAR</small><strong>Menos ruido.<br />Más presencia.</strong><div class="bruma-product"></div><span class="mini-button">DESCUBRIR</span></div>
+            </div>
+            <span class="visual-index">01</span>
+          </a>
+          <div class="project-meta"><div><h3>Bruma Studio</h3><p>Concepto de landing page para una marca de objetos.</p></div><span class="project-arrow">↗</span></div>
+          <div class="project-tags"><span>UI design</span><span>Frontend</span></div>
+        </article>
+
+        <article class="project-card reveal" data-category="visual">
+          <a class="project-visual visual-peach" href="#contacto" aria-label="Consultar sobre proyecto Botánica">
+            <div class="botanica-poster"><span class="poster-top">BOTÁNICA / ARCHIVO 01</span><div class="botanical-art"><i></i><i></i><i></i><b></b></div><strong>Volver<br />a lo simple.</strong><span class="poster-bottom">ESTUDIO DE FORMAS NATURALES</span></div>
+            <span class="visual-index">02</span>
+          </a>
+          <div class="project-meta"><div><h3>Botánica</h3><p>Dirección visual y composición editorial conceptual.</p></div><span class="project-arrow">↗</span></div>
+          <div class="project-tags"><span>Identidad visual</span><span>Composición</span></div>
+        </article>
+
+        <article class="project-card reveal" data-category="concepto">
+          <a class="project-visual visual-blue" href="#contacto" aria-label="Consultar sobre proyecto Pausa">
+            <div class="pausa-screen"><div class="pausa-top"><span>pausa.</span><span>☼</span></div><div class="pausa-center"><span>UN MOMENTO PARA TI</span><strong>Respira.<br /><em>Reinicia.</em></strong><div class="pause-circle"><span>Ⅱ</span></div></div><div class="pausa-bottom"><span>01 — 05 MIN</span><span>PEQUEÑAS PAUSAS, GRANDES CAMBIOS</span></div></div>
+            <span class="visual-index">03</span>
+          </a>
+          <div class="project-meta"><div><h3>Pausa</h3><p>Concepto de interfaz para una experiencia de bienestar.</p></div><span class="project-arrow">↗</span></div>
+          <div class="project-tags"><span>UX concept</span><span>Prototipo visual</span></div>
+        </article>
+
+        <article class="project-card reveal" data-category="web">
+          <a class="project-visual visual-green" href="#contacto" aria-label="Consultar sobre proyecto Aula Abierta">
+            <div class="aula-screen"><div class="aula-nav"><span>aa.</span><span>APRENDER JUNTOS ↗</span></div><div class="aula-copy"><small>UN ESPACIO PARA DESCUBRIR</small><strong>Aprender<br />también es<br /><em>crear.</em></strong><div class="aula-sticker">IDEAS<br />ABIERTAS ✳</div></div><div class="aula-footer"><span>RECURSOS · IDEAS · PRÁCTICA</span><span>↗</span></div></div>
+            <span class="visual-index">04</span>
+          </a>
+          <div class="project-meta"><div><h3>Aula Abierta</h3><p>Propuesta de plataforma para compartir recursos educativos.</p></div><span class="project-arrow">↗</span></div>
+          <div class="project-tags"><span>Diseño web</span><span>Educación</span></div>
+        </article>
+      </div>
+      <p class="portfolio-note">Los trabajos mostrados son conceptos de demostración para esta plantilla. Sustitúyelos por tus proyectos reales o identifícalos como ejercicios conceptuales antes de publicar.</p>
+    </section>
+
+    <section class="about-section" id="sobre-mi">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <div class="about-shape"><span>un poco<br />de mí</span><b>✳</b></div>
+          <div class="about-stamp">CREATIVIDAD<br />EN PROCESO</div>
+          <span class="about-caption">EN CONSTANTE EXPLORACIÓN ↗</span>
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow">02 / DETRÁS DE LA PANTALLA</p>
+          <h2>Curiosa por naturaleza.<br /><em>Creativa</em> por elección.</h2>
+          <p>Me interesa crear experiencias digitales que se sientan claras, útiles y cuidadas. Disfruto combinar el pensamiento visual con la lógica del desarrollo web, aprender herramientas nuevas y convertir ideas en proyectos concretos.</p>
+          <p>Este espacio reúne mi proceso, lo que voy aprendiendo y las ideas que quiero llevar más lejos.</p>
+          <div class="skill-list"><span>HTML & CSS</span><span>JavaScript</span><span>Diseño de interfaces</span><span>Aprendizaje continuo</span></div>
+          <a class="text-link" href="#contacto">Conectemos <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container services-section" id="servicios">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">03 / CÓMO PUEDO APORTAR</p><h2>Ideas, convertidas<br />en <em>posibilidades.</em></h2></div>
+        <p class="section-aside">Servicios que puedo desarrollar y ampliar a medida que crece mi experiencia.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card reveal"><span class="service-number">01</span><div class="service-icon">✳</div><h3>Diseño visual</h3><p>Composiciones digitales, piezas gráficas y recursos visuales con atención al detalle.</p><span class="service-foot">IDEAS QUE SE VEN</span></article>
+        <article class="service-card reveal"><span class="service-number">02</span><div class="service-icon">⌘</div><h3>Diseño web</h3><p>Estructuras claras, interfaces intuitivas y experiencias que se adaptan a diferentes pantallas.</p><span class="service-foot">EXPERIENCIAS DIGITALES</span></article>
+        <article class="service-card reveal"><span class="service-number">03</span><div class="service-icon">↗</div><h3>Desarrollo frontend</h3><p>Páginas web con HTML, CSS y JavaScript, construidas paso a paso y con propósito.</p><span class="service-foot">DEL CONCEPTO AL CÓDIGO</span></article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">04 / HAGAMOS ALGO BONITO</p>
+          <h2>¿Tienes una idea<br />en <em>mente?</em></h2>
+          <p>Cuéntame un poco sobre lo que imaginas. Me encantará conocer tu proyecto y explorar cómo darle forma.</p>
+          <a class="contact-email" href="mailto:hola@miespaciocreativo.com">hola@miespaciocreativo.com <span>↗</span></a>
+          <p class="contact-small">Cambia este correo por tu dirección real antes de publicar.</p>
+        </div>
+        <form class="contact-form reveal" id="contact-form">
+          <label for="name">Tu nombre</label>
+          <input id="name" name="name" type="text" placeholder="¿Cómo te llamas?" required minlength="2" />
+          <label for="email">Tu correo electrónico</label>
+          <input id="email" name="email" type="email" placeholder="tu@correo.com" required />
+          <label for="project-type">¿Qué tienes en mente?</label>
+          <select id="project-type" name="project-type" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option>Diseño visual</option><option>Diseño web</option><option>Desarrollo frontend</option><option>Otro proyecto</option>
+          </select>
+          <label for="message">Cuéntame un poco más</label>
+          <textarea id="message" name="message" rows="4" placeholder="Me gustaría crear..." required minlength="10"></textarea>
+          <button class="button button-primary form-submit" type="submit">Preparar mensaje <span aria-hidden="true">↗</span></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <p class="form-note">Demo de frontend: este formulario valida los campos y prepara un correo, pero aún no almacena mensajes en un servidor.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#inicio"><span class="brand-mark">m.</span><span>mi espacio <strong>creativo</strong></span></a>
+      <p>Hecho con curiosidad y un poco de lavanda. <span>✳</span></p>
+      <a class="back-top" href="#inicio">Volver arriba ↑</a>
+      <small>© <span id="year"></span> Mi espacio creativo</small>
+    </div>
+  </footer>
+</body>
+</html>
