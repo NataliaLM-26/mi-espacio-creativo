@@ -114,12 +114,100 @@ h2 { margin-bottom: 0; font-size: clamp(2.15rem, 4vw, 3.45rem); }
 .botanica-poster { position: relative; display: flex; flex-direction: column; justify-content: space-between; width: 57%; min-height: 270px; padding: 17px; background: #f6eee5; box-shadow: 0 16px 30px rgba(70,46,36,.13); transform: rotate(3deg); }
 .poster-top, .poster-bottom { font-size: .45rem; letter-spacing: .12em; }
 .botanica-poster strong { font-family: "Manrope"; font-size: clamp(1.55rem, 3vw, 2.5rem); line-height: .95; letter-spacing: -.07em; }
-.botanical-art { position: absolute; top: 45px; right: 16px; width: 90px; height: 125px; }
+
+/* .botanical-art { position: absolute; top: 45px; right: 16px; width: 90px; height: 125px; }
 .botanical-art i { position: absolute; width: 27px; height: 57px; background: #71836a; border-radius: 100% 0 100% 0; transform-origin: bottom right; }
 .botanical-art i:nth-child(1) { top: 0; left: 20px; transform: rotate(-28deg); }
 .botanical-art i:nth-child(2) { top: 28px; left: 38px; transform: rotate(40deg); background: #9aa48a; }
 .botanical-art i:nth-child(3) { top: 45px; left: 5px; transform: rotate(-58deg); background: #526b58; }
-.botanical-art b { position: absolute; top: 65px; left: 44px; width: 2px; height: 65px; background: #53684e; transform: rotate(15deg); }
+
+.botanical-art b { 
+  position: absolute; 
+  top: 65px; 
+  left: 44px; 
+  width: 2px; 
+  height: 65px; 
+  background: #53684e; 
+  transform: rotate(15deg); 
+} */
+
+
+/* Ilustración de pastel de cumpleaños */
+.botanical-art {
+    position: absolute;
+    top: 48px;
+    right: 12px;
+    width: 110px;
+    height: 115px;
+}
+
+/* Cuerpo del pastel */
+.botanical-art::before {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    width: 78px;
+    height: 43px;
+    background: #d9b8c9;
+    border-radius: 8px 8px 13px 13px;
+    box-shadow: inset 0 -7px 0 #c99eb5;
+}
+
+/* Betún */
+.botanical-art::after {
+    content: "";
+    position: absolute;
+    bottom: 48px;
+    left: 12px;
+    width: 78px;
+    height: 13px;
+    background: #f1dce6;
+    border-radius: 50%;
+}
+
+/* Velitas */
+.botanical-art i {
+    position: absolute;
+    bottom: 60px;
+    width: 5px;
+    height: 23px;
+    background: #71836a;
+    border-radius: 2px;
+    z-index: 2;
+}
+
+.botanical-art i:nth-child(1) {
+    left: 30px;
+}
+
+.botanical-art i:nth-child(2) {
+    left: 49px;
+    background: #b58aa3;
+}
+
+.botanical-art i:nth-child(3) {
+    left: 68px;
+    background: #71836a;
+}
+
+/* Llamas de las velas */
+.botanical-art b {
+    position: absolute;
+    bottom: 83px;
+    left: 29px;
+    width: 7px;
+    height: 11px;
+    background: #e5ad62;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    box-shadow:
+        19px 0 0 #e5ad62,
+        38px 0 0 #e5ad62;
+    z-index: 3;
+}
+
+
 .visual-blue { background: #dbe5ed; }
 .pausa-screen { width: 68%; min-height: 270px; padding: 17px; background: #f8f7f2; border-radius: 9px; box-shadow: 0 17px 35px rgba(42,57,73,.12); transform: rotate(-2deg); }
 .pausa-top, .pausa-bottom { display: flex; justify-content: space-between; align-items: center; }
